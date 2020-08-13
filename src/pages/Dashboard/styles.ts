@@ -54,13 +54,23 @@ export const TableContainer = styled.section`
     width: 100%;
     border-spacing: 0 8px;
 
+    div {
+      padding: 0 32px 0 20px;
+    }
+    tr {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     th {
+      align-items: center;
+      display: grid;
+      grid-template-columns: 0fr 1fr;
       color: #969cb3;
       font-weight: normal;
-      padding: 20px 32px;
       text-align: left;
       font-size: 16px;
       line-height: 24px;
+      margin-right: 12px;
     }
 
     td {

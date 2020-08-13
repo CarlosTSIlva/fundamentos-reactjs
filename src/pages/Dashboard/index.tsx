@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-
+import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 import income from '../../assets/income.svg';
 import outcome from '../../assets/outcome.svg';
 import total from '../../assets/total.svg';
-
 import api from '../../services/api';
 
 import Header from '../../components/Header';
@@ -73,10 +72,30 @@ const Dashboard: React.FC = () => {
           <table>
             <thead>
               <tr>
-                <th>Título</th>
-                <th>Preço</th>
-                <th>Categoria</th>
-                <th>Data</th>
+                <div>
+                  <th>
+                    <th>Título</th>
+                    <FiChevronDown color="#969CB3" />
+                  </th>
+                </div>
+                <div>
+                  <th>
+                    <th>Preço</th>
+                    <FiChevronDown color="#969CB3" />
+                  </th>
+                </div>
+                <div>
+                  <th>
+                    <th>Categoria</th>
+                    <FiChevronDown color="#969CB3" />
+                  </th>
+                </div>
+                <div>
+                  <th>
+                    <th>Data</th>
+                    <FiChevronUp color="#FF872C" margin-button={30000} />
+                  </th>
+                </div>
               </tr>
             </thead>
 
